@@ -29,3 +29,24 @@ body{
 #scoreboard {
     margin-left: 20px;
 }
+/* Controles táctiles (celular/tablet) */
+#controls { display: none; }
+@media (hover: none) {
+    #controls {
+        display: grid;
+        grid-template-areas: ". up ." "left down right";
+        gap: 8px;
+        width: 180px;
+        margin-top: 12px;
+    }
+    #controls button {
+        font-size: 24px;
+        padding: 12px;
+        touch-action: manipulation;
+    }
+    #controls button[data-dir="w"] { grid-area: up; }
+    #controls button[data-dir="a"] { grid-area: left; }
+    #controls button[data-dir="s"] { grid-area: down; }
+    #controls button[data-dir="d"] { grid-area: right; }
+    #ayuda { display: none; }
+}

@@ -278,3 +278,11 @@ function restartGame()
     }
 }
 
+
+// Controles táctiles: cada botón fija la dirección, igual que las teclas WASD
+document.querySelectorAll('#controls button').forEach(function(boton) {
+    boton.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        direction = boton.dataset.dir;
+    });
+});

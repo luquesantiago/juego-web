@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juego de monedas</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -9,6 +12,16 @@
     <div id="player" class="game-item"></div>
 </div>
 <div id="scoreboard"></div>
+
+<!-- Controles táctiles: solo se muestran en pantallas sin mouse -->
+<div id="controls">
+    <button data-dir="w">▲</button>
+    <button data-dir="a">◀</button>
+    <button data-dir="s">▼</button>
+    <button data-dir="d">▶</button>
+</div>
+<p id="ayuda">Movete con W A S D</p>
+
 <script src="script.js"></script>
 
 </body>
