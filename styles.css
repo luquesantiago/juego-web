@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    
+}
+#game-board {
+    position: relative;
+    height: 550px;
+    width: 800px;
+    border: 1px solid black;
+    background-color:rgb(22, 189, 44);
+}
+.game-item {
+    position: absolute;
+    width: 50px; /* Ancho del sprite */
+    height: 50px; /* Altura del sprite */
+}
+#player {
+    background-image: url('head.jpeg'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el sprite */
+}
+.coin {
+    background-image: url('coin.png'); /* Ruta a tu imagen de moneda */
+    background-size: cover; /* Asegura que la imagen cubra todo el sprite */
+}
+.enemy {
+    background-image: url('enemy.png'); /* Ruta a tu imagen de enemigo */
+    background-size: cover; /* Asegura que la imagen cubra todo el sprite */
+}
+#scoreboard {
+    margin-left: 20px;
+}
